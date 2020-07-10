@@ -26,7 +26,7 @@ trap 'kill ${!}; usr_handler' SIGUSR1
 trap 'kill ${!}; term_handler' SIGTERM
 
 # run application
-node /opt/s3mgr/api/index.js &
+node /app/index.js &
 pid="$!"
 
 # wait forever
